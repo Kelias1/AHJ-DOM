@@ -4,7 +4,7 @@
 	width: 500px;
 }
 
-.wrapper div {
+.wrapper .box {
 	height: 125px;
 	border: 1px solid #000;
 }
