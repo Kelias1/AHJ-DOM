@@ -1,10 +1,10 @@
-.wrapper {
+.box {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	width: 500px;
 }
 
-.wrapper .box {
+.box div {
 	height: 125px;
 	border: 1px solid #000;
 }

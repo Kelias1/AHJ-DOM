@@ -1,9 +1,14 @@
 import image from "../img/goblin.png";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const boxes = document.querySelectorAll(".box");
+  const boxes = document.querySelector(".box");
   const goblin = document.createElement("img");
   goblin.src = image;
+
+  for (let i = 0; i < 16; i++) {
+    let div = document.createElement("div");
+    boxes.appendChild(div);
+  }
   
   let currentBox = null;
 
