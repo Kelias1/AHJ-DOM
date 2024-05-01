@@ -19,6 +19,8 @@ const goblin_namespaceObject = __webpack_require__.p + "2dbd01ce16c0fa83cb67.png
 document.addEventListener("DOMContentLoaded", () => {
   const box = document.querySelector(".box");
   const board = [];
+  const goblin = document.createElement("img");
+  goblin.src = goblin_namespaceObject;
   for (let i = 0; i < 16; i++) {
     let div = document.createElement("div");
     box.append(div);
@@ -28,8 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function moveGoblin() {
     board[currentBox].innerHTML = '';
     currentBox = Math.floor(Math.random() * board.length);
-    const goblin = document.createElement("img");
-    goblin.src = goblin_namespaceObject;
     board[currentBox].append(goblin);
   }
   setInterval(moveGoblin, 1000);
